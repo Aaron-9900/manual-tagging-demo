@@ -1,4 +1,6 @@
 const esbuild = require('esbuild');
+const ddPlugin = require('dd-trace/esbuild');
+
 
 esbuild.build({
   entryPoints: ['server.js'],
@@ -8,6 +10,7 @@ esbuild.build({
   format: 'cjs',
   outfile: 'dist/server.js',
   packages: 'external',
+  plugins: [ddPlugin],
 
 }).catch((e) => {
   console.error(e);

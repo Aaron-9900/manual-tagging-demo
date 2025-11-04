@@ -25,4 +25,4 @@ services:
       context: ./node-server
     environment:
       - DD_AGENT_HOST=datadog-agent
-      - DD_SERVICE=server
+      - DD_SERVICE=aaron-server

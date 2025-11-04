@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dd-trace": "^5.65.0",
+    "express": "^5.1.0"
+  }
+}
